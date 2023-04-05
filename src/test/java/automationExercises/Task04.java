@@ -8,9 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
-
-public class Task4 {
+public class Task04 {
     /*
 1. Launch browser
 2. Navigate to url 'http://automationexercise.com'
@@ -54,19 +52,12 @@ public class Task4 {
         driver.findElement(By.xpath("//*[@data-qa='login-email']")).sendKeys("password1@gmail.com");
         driver.findElement(By.xpath("//*[@data-qa='login-password']")).sendKeys("password1");
         driver.findElement(By.xpath("//*[@data-qa='login-button']")).click();
-    }
-   //@Test
-   //public  void t4_accSucc(){
-   //    WebElement text2= driver.findElement(By.xpath("//*[text()=' Logged in as ']"));
-   //    Assert.assertTrue(text2.isDisplayed());
-   //}
-    @Test
-    public void t5_loggout(){
+        WebElement text2=driver.findElement(By.xpath("//a[text()=' Logged in as ']"));
+        Assert.assertTrue(text2.isDisplayed());
         driver.findElement(By.xpath("//*[@href='/logout']")).click();
-    }
-    @Test
-    public void t6_backLoginPage(){
         WebElement text1=driver.findElement(By.xpath("//*[text()='Login to your account']"));
         Assert.assertTrue(text1.isDisplayed());
     }
+
+
 }
