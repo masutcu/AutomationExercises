@@ -11,14 +11,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Task06 {
-    /*
-    1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
 
+    //1. Launch browser
+    //2. Navigate to url 'http://automationexercise.com'
 
-
-
-     */
     static WebDriver driver;
     @BeforeClass
     public static void launchBrw(){
