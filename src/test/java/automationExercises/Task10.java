@@ -32,7 +32,7 @@ public class Task10 {
     }
     @AfterClass
     public static void closeBrw() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         //driver.close();
     }
     //3. Verify that home page is visible successfully
@@ -46,7 +46,7 @@ public class Task10 {
         WebElement homePage=driver.findElement(By.xpath("//html"));
         Assert.assertTrue(homePage.isDisplayed());
         Actions actions = new Actions(driver);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.ARROW_DOWN).perform();
         WebElement text=driver.findElement(By.xpath("//h2[text()='Subscription']"));
         Assert.assertTrue(text.isDisplayed());
         driver.findElement(By.xpath("//input[@id='susbscribe_email']")).sendKeys("password1@gmail.com");

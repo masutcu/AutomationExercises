@@ -57,6 +57,8 @@ public class Task04 {
         driver.findElement(By.xpath("//*[@href='/logout']")).click();
         WebElement text1=driver.findElement(By.xpath("//*[text()='Login to your account']"));
         Assert.assertTrue(text1.isDisplayed());
+
+
     }
 
 

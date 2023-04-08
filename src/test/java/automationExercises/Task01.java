@@ -68,7 +68,7 @@ public class Task01 {
         WebElement information =      driver.findElement(By.xpath("//*[text()='Enter Account Information']"));
         Assert.assertTrue(information.isDisplayed());
 
-        //Fill details: Title, Name, Email, Password, Date of birth
+        //9. Fill details: Title, Name, Email, Password, Date of birth
         WebElement mr = driver.findElement(By.xpath("//input[@id='id_gender1']"));
         if(!mr.isSelected())
             mr.click();

@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.time.Duration;
+
 public class Task05 {
     /*
 1. Launch browser
@@ -27,7 +29,7 @@ public class Task05 {
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
         driver.manage().window().maximize();
-        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.navigate().to("http://automationexercise.com");
     }
     @AfterClass
@@ -38,6 +40,7 @@ public class Task05 {
     @Test
     public void testhp(){
         WebElement homePage=driver.findElement(By.xpath("//html"));
+
         Assert.assertTrue(homePage.isDisplayed());
     }
     @Test
