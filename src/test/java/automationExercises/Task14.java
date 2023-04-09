@@ -230,7 +230,7 @@ public class Task14 {
         Thread.sleep(1000);
         driver.findElement(By.xpath("//button[@id='submit']")).click();
         Thread.sleep(2000);
-        //18. Verify success message 'Your order has been placed successfully!'
+        //18. Verify success message 'Your order has been placed successfully!' Bu bölüm HATA veriyor
         //19. Click 'Delete Account' button
         //20. Verify 'ACCOUNT DELETED!' and click 'Continue' button
 

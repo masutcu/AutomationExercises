@@ -41,7 +41,7 @@ public class Task13 {
     @AfterClass
     public static void closeBrw() throws InterruptedException {
         Thread.sleep(2000);
-        //driver.close();
+        driver.close();
     }
     @Test
     public void test1() throws InterruptedException {
@@ -53,12 +53,9 @@ public class Task13 {
         WebElement element=driver.findElement(By.xpath("//*[@href='/product_details/2']"));
         Thread.sleep(2000);
         //element.click();
+        //RelativeLocater Kullanarak yapalım
         driver.findElement(with(By.tagName("a")).toRightOf(element)).click();
-        //List<WebElement> list=driver.findElements(By.xpath("//i[@class='fa fa-plus-square']"));
-        //System.out.println(list);
-        //for(WebElement w:list){
-        //    w.click();
-        //    break;}
+
         driver.navigate().back();
         driver.navigate().forward();
 
