@@ -99,7 +99,7 @@ public class Task14 {
         singUpButton.click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//input[@data-qa='signup-name']")).sendKeys("Mehmet");
-        driver.findElement(By.xpath("//input[@data-qa='signup-email']")).sendKeys("password14@gmail.com");
+        driver.findElement(By.xpath("//input[@data-qa='signup-email']")).sendKeys("password15@gmail.com");
 
 
         driver.findElement(By.xpath("//*[@data-qa='signup-button']")).click();
